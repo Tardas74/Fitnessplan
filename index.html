@@ -198,12 +198,12 @@
 
 <script>
 /* =========================================================
-   TRAINING — via öffentliche/geheime iCal-Adresse + CORS-Proxy
-   ICS_URL hier eintragen (Google Calendar → Kalendereinstellungen
-   "Laufen / Sport" → Integrate calendar → "Secret address in iCal format")
+   TRAINING — calendar.ics wird von einer GitHub Action alle 30 Min.
+   direkt aus der geheimen Google-Kalender-Adresse gezogen und ins
+   Repo committed. Der Browser lädt es same-origin — kein CORS-Proxy
+   mehr nötig (der bisherige Proxy allorigins.win war unzuverlässig).
    ========================================================= */
-const ICS_URL = 'PASTE_YOUR_SECRET_ICAL_URL_HERE';
-const PROXY = 'https://api.allorigins.win/raw?url=';
+const ICS_URL = './calendar.ics';
 
 let weekOffset = 0;
 let icsEventsCache = null;
@@ -306,14 +306,10 @@ async function loadWeek(){
   rangeEl.innerHTML = `Woche ${fmtDeShort(monday)} – ${fmtDeShort(sundayDisplay)} ${sundayDisplay.getFullYear()}${tag}`;
   updateNavButtons();
 
-  if(ICS_URL.indexOf('PASTE_YOUR') === 0){
-    el.innerHTML = '<div class="status-msg">Noch keine Kalender-Adresse hinterlegt.</div>';
-    return;
-  }
-
   try{
     if(!icsEventsCache){
-      const res = await fetch(PROXY + encodeURIComponent(ICS_URL));
+      const res = await fetch(ICS_URL + '?t=' + Date.now());
+      if(!res.ok) throw new Error('HTTP ' + res.status);
       const text = await res.text();
       icsEventsCache = parseIcs(text);
     }
@@ -337,7 +333,7 @@ async function loadWeek(){
       </div>`;
     }).join('');
   }catch(err){
-    el.innerHTML = '<div class="status-msg">Termine konnten nicht geladen werden (Proxy oder Kalender nicht erreichbar).</div>';
+    el.innerHTML = '<div class="status-msg">Termine konnten nicht geladen werden (calendar.ics noch nicht synchronisiert — bitte kurz warten, die GitHub Action läuft alle 30 Min. bzw. direkt nach jedem Push).</div>';
   }
 }
 

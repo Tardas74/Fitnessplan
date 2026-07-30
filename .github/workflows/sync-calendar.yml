@@ -18,7 +18,7 @@ jobs:
 
       - name: Fetch ICS from Google Calendar
         run: |
-          curl -sL "https://calendar.google.com/calendar/ical/c0s9epsmpe5c4mg91v7ksuldnk%40group.calendar.google.com/private-0b609aa423dd0e95fb32e2d4da3374e5/basic.ics" -o calendar.ics
+          curl -sL "https://calendar.google.com/calendar/ical/3a46af0781af4e47e8e0767ef7a3e645fb2306b4e31d457855ba6085ff7ba5c0%40group.calendar.google.com/private-79031cd9fcb39750b9d514889e24d2ec/basic.ics" -o calendar.ics
           test -s calendar.ics
 
       - name: Commit if changed

@@ -53,22 +53,23 @@
   .train-item{ display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-top:1px solid var(--line); }
   .train-item:first-of-type{ border-top:none; padding-top:0; }
   .train-day{ font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px; color:#fff; background: var(--blue); border-radius:8px; padding:5px 9px; white-space:nowrap; min-width:38px; text-align:center; }
+  .train-body{ min-width:0; flex:1; overflow-wrap:break-word; }
   .train-body b{ font-size:15px; }
   .train-time{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ink-soft); margin-left:6px; }
-  .train-desc{ font-size:13px; color:var(--ink-soft); margin-top:4px; white-space:pre-line; }
+  .train-desc{ font-size:13px; color:var(--ink-soft); margin-top:4px; white-space:pre-line; overflow-wrap:break-word; }
   .status-msg{ font-size:13px; color:var(--ink-soft); font-style:italic; }
-  .kcal-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-  @media (max-width:620px){ .kcal-grid{ grid-template-columns:1fr; } .recipe-grid{ grid-template-columns:1fr; } }
-  .kcal-box{ background: var(--blue-soft); border-radius:12px; padding:16px; text-align:center; }
+  .kcal-grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  @media (max-width:620px){ .kcal-grid{ grid-template-columns:1fr; } .recipe-grid{ grid-template-columns:minmax(0,1fr); } }
+  .kcal-box{ background: var(--blue-soft); border-radius:12px; padding:16px; text-align:center; min-width:0; }
   .kcal-box.accent{ background: var(--accent-soft); }
-  .kcal-box .num{ font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:22px; color:var(--blue); }
+  .kcal-box .num{ font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:22px; color:var(--blue); overflow-wrap:break-word; }
   .kcal-box.accent .num{ color:#c8431f; }
   .kcal-box .lbl{ font-size:11.5px; color:var(--ink-soft); margin-top:3px; text-transform:uppercase; letter-spacing:.03em; }
   .kcal-note{ font-size:13px; color:var(--ink-soft); margin-top:14px; line-height:1.5; }
-  .recipe-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-  .recipe{ border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
-  .recipe h3{ font-weight:700; font-size:14.5px; margin:0 0 8px; color:var(--ink); }
-  .recipe p{ font-size:12.5px; margin:5px 0; line-height:1.45; color: var(--ink-soft); }
+  .recipe-grid{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px; }
+  .recipe{ border:1px solid var(--line); border-radius:12px; padding:14px 16px; min-width:0; overflow-wrap:break-word; word-break:break-word; }
+  .recipe h3{ font-weight:700; font-size:14.5px; margin:0 0 8px; color:var(--ink); overflow-wrap:break-word; }
+  .recipe p{ font-size:12.5px; margin:5px 0; line-height:1.45; color: var(--ink-soft); overflow-wrap:break-word; }
   .macro-row{ display:flex; gap:6px; margin-top:8px; flex-wrap:wrap; }
   .macro{ font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; padding:3px 8px; border-radius:20px; }
   .macro.kcal{ background:var(--blue-soft); color:var(--blue); }

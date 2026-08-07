@@ -25,84 +25,9 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART:20260825T043000Z
-DTEND:20260825T050000Z
-DTSTAMP:20260807T094449Z
-UID:ncr29svco8au5eb08ur6qtqls4@google.com
-CREATED:20260730T154943Z
-DESCRIPTION:Kraft B – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
- Warm-up: wie Kraft A\n\nHauptteil (3 Runden):\n- Kettlebell Deadlift (Rumän
- isches Kreuzheben) – 10–12 Wdh\n- Kurzhantel Schulterdrücken stehend – 10–1
- 2 Wdh\n- Renegade Row / Kettlebell Row einarmig – 10 Wdh/Seite\n- Ausfallsc
- hritt rückwärts mit Kurzhanteln – 10 Wdh/Seite\n- Dead Bug – 10 Wdh/Seite\n
- - Pallof Press mit Theraband – 10 Wdh/Seite\n\nAusklang: kurze Atemübung\, 
- 1 Min\n\nWindsurf-Transfer: Rumpfrotation/Kraftübertragung vom Segel\, Schu
- lterstabilität.
-LAST-MODIFIED:20260730T154944Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:Kraft B – Kettlebell/Bodyweight (zuhause)
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;TZID=Europe/Berlin:20260807T063000
-DTEND;TZID=Europe/Berlin:20260807T071500
-RRULE:FREQ=WEEKLY;BYDAY=FR
-DTSTAMP:20260807T094449Z
-UID:8i4rpa4150hbulh52980r2rats@google.com
-CREATED:20260730T154853Z
-DESCRIPTION:Kraft C – Kettlebell-Conditioning (Garten\, 40–45 Min)\n\nÜbung
- en:\n- 10 Min EMOM (10 Swings + 5 Goblet Squats)\n- 3x Farmer Carry\n- 4x m
- ax. Klimmzüge\n- Knöchel-Mobility\n- Kettlebell Windmill oder Russian Twist
-  mit Kettlebell (2–3x12/Seite)\n\nWindsurf-Transfer: Swings/Windmill traini
- eren die Hüft-Rumpf-Rotation für die Segelkraftübertragung\; Farmer Carry f
- ür Griffausdauer am Gabelbaum.
-LAST-MODIFIED:20260730T154853Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:Kraft C – Kettlebell-Conditioning
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20260817T170000Z
-DTEND:20260817T180000Z
-DTSTAMP:20260807T094449Z
-UID:sr7ibe8js8i3qoq8f2mbk38c2k@google.com
-CREATED:20260730T154919Z
-DESCRIPTION:Kraft A – Fitnessstudio-Variante (50–60 Min)\n\nÜbungen:\n- Bei
- npresse/Kniebeuge\n- Bulgarian Split Squat\n- Rumänisches Kreuzheben\n- Wad
- enheber (zuletzt einbeinig)\n- Einbeinstand/Balance-Pad\n- Plank\n\nWindsur
- f-Transfer: Chop-Absorption\, Halsen\, Stabilität beim Wasserstart.
-LAST-MODIFIED:20260730T154919Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:Kraft A – Fitnessstudio
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20260804T043000Z
-DTEND:20260804T050000Z
-DTSTAMP:20260807T094449Z
-UID:alom2nikj9ej16gs1nnpsas4s8@google.com
-CREATED:20260730T154931Z
-DESCRIPTION:Kraft B – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
- Warm-up: wie Kraft A\n\nHauptteil (3 Runden):\n- Kettlebell Deadlift (Rumän
- isches Kreuzheben) – 10–12 Wdh\n- Kurzhantel Schulterdrücken stehend – 10–1
- 2 Wdh\n- Renegade Row / Kettlebell Row einarmig – 10 Wdh/Seite\n- Ausfallsc
- hritt rückwärts mit Kurzhanteln – 10 Wdh/Seite\n- Dead Bug – 10 Wdh/Seite\n
- - Pallof Press mit Theraband – 10 Wdh/Seite\n\nAusklang: kurze Atemübung\, 
- 1 Min\n\nWindsurf-Transfer: Rumpfrotation/Kraftübertragung vom Segel\, Schu
- lterstabilität.
-LAST-MODIFIED:20260730T154931Z
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:Kraft B – Kettlebell/Bodyweight (zuhause)
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20260810T043000Z
 DTEND:20260810T050000Z
-DTSTAMP:20260807T094449Z
+DTSTAMP:20260807T122920Z
 UID:trr9dmdo54vr2a825nqm4d9d0g@google.com
 CREATED:20260730T154915Z
 DESCRIPTION:Kraft A – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
@@ -121,30 +46,62 @@ SUMMARY:Kraft A – Kettlebell/Bodyweight (zuhause)
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20260803T170000Z
-DTEND:20260803T173000Z
-DTSTAMP:20260807T094449Z
-UID:ui32narb8c49bl9k7dc0050bhc@google.com
-CREATED:20260730T154911Z
-DESCRIPTION:Kraft A – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
- Warm-up: Kniebeuge ohne Gewicht x15\, Ausfallschritte im Wechsel x10/Seite\
- , Armkreisen + Rumpfrotation x10\, Knöchelkreisen 10x/Richtung je Fuß\n\nHa
- uptteil (3 Runden):\n- Kettlebell Goblet Squat – 12–15 Wdh\n- Bulgarischer 
- Split Squat (hinterer Fuß erhöht) – 8–10 Wdh/Seite\n- Einbeiniger Wadenhebe
- r (Wand/Treppe) – 15 Wdh/Seite\n- Theraband seitliche Schritte – 10 Wdh/Sei
- te\n- Einbeinstand mit Kettlebell-Reach – 8 Wdh/Seite\n- Plank – 30–45 Sek\
- n\nAusklang: Wadendehnung\, Knöchel-Mobility\n\nWindsurf-Transfer: Chop-Abs
- orption\, Halsen\, Stabilität beim Wasserstart.
-LAST-MODIFIED:20260803T073259Z
-SEQUENCE:1
+DTSTART:20260813T170000Z
+DTEND:20260813T180000Z
+DTSTAMP:20260807T122920Z
+UID:tu52jjm6p0si2sbrqtqi2skmi8@google.com
+CREATED:20260730T154936Z
+DESCRIPTION:Kraft B – Fitnessstudio-Variante (45–60 Min)\n\nÜbungen:\n- Kli
+ mmzüge (5 Sätze bis knapp unter Muskelversagen)\n- Latzug/Rudern\n- Schulte
+ rdrücken\n- Bizeps/Trizeps\n- Hanging Leg Raises\n- Schulter-Außenrotation 
+ mit Theraband (2x12)\n- Zangengriff-Halten oder Handtuchklimmzüge (Unterarm
+ kraft)\n\nWindsurf-Transfer: Gabelbaum-/Trapezgriff\, Schulterstabilität be
+ i Powerhalsen.\n\nHinweis: auf Do verschoben (statt Di)\, da Di 19:30 Uhr d
+ ie HWSC Vorstandssitzung im Familienkalender steht.
+LAST-MODIFIED:20260730T154936Z
+SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Kraft A – Kettlebell/Bodyweight (zuhause)
+SUMMARY:Kraft B – Fitnessstudio
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260807T063000
+DTEND;TZID=Europe/Berlin:20260807T071500
+RRULE:FREQ=WEEKLY;BYDAY=FR
+DTSTAMP:20260807T122920Z
+UID:8i4rpa4150hbulh52980r2rats@google.com
+CREATED:20260730T154853Z
+DESCRIPTION:Kraft C – Kettlebell-Conditioning (Garten\, 40–45 Min)\n\nÜbung
+ en:\n- 10 Min EMOM (10 Swings + 5 Goblet Squats)\n- 3x Farmer Carry\n- 4x m
+ ax. Klimmzüge\n- Knöchel-Mobility\n- Kettlebell Windmill oder Russian Twist
+  mit Kettlebell (2–3x12/Seite)\n\nWindsurf-Transfer: Swings/Windmill traini
+ eren die Hüft-Rumpf-Rotation für die Segelkraftübertragung\; Farmer Carry f
+ ür Griffausdauer am Gabelbaum.
+LAST-MODIFIED:20260730T154853Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Kraft C – Kettlebell-Conditioning
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260808T090000
+DTEND;TZID=Europe/Berlin:20260808T103000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+DTSTAMP:20260807T122920Z
+UID:lj8c5iavri0rlg9m61kccmrc0o@google.com
+CREATED:20260730T154858Z
+DESCRIPTION:SUP (fest)\, 60–90 Min.\n\nFeste sportliche Einheit – nicht Tei
+ l des strukturierten Kraftplans\, aber fest im Wochenrhythmus.
+LAST-MODIFIED:20260730T154858Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:SUP (fest)
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260824T043000Z
 DTEND:20260824T050000Z
-DTSTAMP:20260807T094449Z
+DTSTAMP:20260807T122920Z
 UID:3bs4k9hk28dc67psasnd5aa0rk@google.com
 CREATED:20260730T154922Z
 DESCRIPTION:Kraft A – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
@@ -166,7 +123,7 @@ BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20260805T173000
 DTEND;TZID=Europe/Berlin:20260805T184500
 RRULE:FREQ=WEEKLY;BYDAY=WE
-DTSTAMP:20260807T094449Z
+DTSTAMP:20260807T122920Z
 UID:506tjjuaes3m5sgc3ctdfhtoes@google.com
 CREATED:20260730T154856Z
 DESCRIPTION:SUP (fest\, abends)\, 60–70 Min.\n\nFeste sportliche Einheit – 
@@ -178,43 +135,45 @@ SUMMARY:SUP (fest)
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20260813T170000Z
-DTEND:20260813T180000Z
-DTSTAMP:20260807T094449Z
-UID:tu52jjm6p0si2sbrqtqi2skmi8@google.com
-CREATED:20260730T154936Z
-DESCRIPTION:Kraft B – Fitnessstudio-Variante (45–60 Min)\n\nÜbungen:\n- Kli
- mmzüge (5 Sätze bis knapp unter Muskelversagen)\n- Latzug/Rudern\n- Schulte
- rdrücken\n- Bizeps/Trizeps\n- Hanging Leg Raises\n- Schulter-Außenrotation 
- mit Theraband (2x12)\n- Zangengriff-Halten oder Handtuchklimmzüge (Unterarm
- kraft)\n\nWindsurf-Transfer: Gabelbaum-/Trapezgriff\, Schulterstabilität be
- i Powerhalsen.\n\nHinweis: auf Do verschoben (statt Di)\, da Di 19:30 Uhr d
- ie HWSC Vorstandssitzung im Familienkalender steht.
-LAST-MODIFIED:20260730T154936Z
+DTSTART:20260817T170000Z
+DTEND:20260817T180000Z
+DTSTAMP:20260807T122920Z
+UID:sr7ibe8js8i3qoq8f2mbk38c2k@google.com
+CREATED:20260730T154919Z
+DESCRIPTION:Kraft A – Fitnessstudio-Variante (50–60 Min)\n\nÜbungen:\n- Bei
+ npresse/Kniebeuge\n- Bulgarian Split Squat\n- Rumänisches Kreuzheben\n- Wad
+ enheber (zuletzt einbeinig)\n- Einbeinstand/Balance-Pad\n- Plank\n\nWindsur
+ f-Transfer: Chop-Absorption\, Halsen\, Stabilität beim Wasserstart.
+LAST-MODIFIED:20260730T154919Z
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:Kraft B – Fitnessstudio
+SUMMARY:Kraft A – Fitnessstudio
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=Europe/Berlin:20260808T090000
-DTEND;TZID=Europe/Berlin:20260808T103000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-DTSTAMP:20260807T094449Z
-UID:lj8c5iavri0rlg9m61kccmrc0o@google.com
-CREATED:20260730T154858Z
-DESCRIPTION:SUP (fest)\, 60–90 Min.\n\nFeste sportliche Einheit – nicht Tei
- l des strukturierten Kraftplans\, aber fest im Wochenrhythmus.
-LAST-MODIFIED:20260730T154858Z
+DTSTART:20260825T043000Z
+DTEND:20260825T050000Z
+DTSTAMP:20260807T122920Z
+UID:ncr29svco8au5eb08ur6qtqls4@google.com
+CREATED:20260730T154943Z
+DESCRIPTION:Kraft B – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
+ Warm-up: wie Kraft A\n\nHauptteil (3 Runden):\n- Kettlebell Deadlift (Rumän
+ isches Kreuzheben) – 10–12 Wdh\n- Kurzhantel Schulterdrücken stehend – 10–1
+ 2 Wdh\n- Renegade Row / Kettlebell Row einarmig – 10 Wdh/Seite\n- Ausfallsc
+ hritt rückwärts mit Kurzhanteln – 10 Wdh/Seite\n- Dead Bug – 10 Wdh/Seite\n
+ - Pallof Press mit Theraband – 10 Wdh/Seite\n\nAusklang: kurze Atemübung\, 
+ 1 Min\n\nWindsurf-Transfer: Rumpfrotation/Kraftübertragung vom Segel\, Schu
+ lterstabilität.
+LAST-MODIFIED:20260730T154944Z
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:SUP (fest)
+SUMMARY:Kraft B – Kettlebell/Bodyweight (zuhause)
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20260818T170000Z
 DTEND:20260818T180000Z
-DTSTAMP:20260807T094449Z
+DTSTAMP:20260807T122920Z
 UID:vat5e78aujupbedj53s8ku1rqs@google.com
 CREATED:20260730T154942Z
 DESCRIPTION:Kraft B – Fitnessstudio-Variante (45–60 Min)\n\nÜbungen:\n- Kli
@@ -227,6 +186,47 @@ LAST-MODIFIED:20260730T154943Z
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Kraft B – Fitnessstudio
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260804T043000Z
+DTEND:20260804T050000Z
+DTSTAMP:20260807T122920Z
+UID:alom2nikj9ej16gs1nnpsas4s8@google.com
+CREATED:20260730T154931Z
+DESCRIPTION:Kraft B – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
+ Warm-up: wie Kraft A\n\nHauptteil (3 Runden):\n- Kettlebell Deadlift (Rumän
+ isches Kreuzheben) – 10–12 Wdh\n- Kurzhantel Schulterdrücken stehend – 10–1
+ 2 Wdh\n- Renegade Row / Kettlebell Row einarmig – 10 Wdh/Seite\n- Ausfallsc
+ hritt rückwärts mit Kurzhanteln – 10 Wdh/Seite\n- Dead Bug – 10 Wdh/Seite\n
+ - Pallof Press mit Theraband – 10 Wdh/Seite\n\nAusklang: kurze Atemübung\, 
+ 1 Min\n\nWindsurf-Transfer: Rumpfrotation/Kraftübertragung vom Segel\, Schu
+ lterstabilität.
+LAST-MODIFIED:20260730T154931Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Kraft B – Kettlebell/Bodyweight (zuhause)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260803T170000Z
+DTEND:20260803T173000Z
+DTSTAMP:20260807T122920Z
+UID:ui32narb8c49bl9k7dc0050bhc@google.com
+CREATED:20260730T154911Z
+DESCRIPTION:Kraft A – Kettlebell/Bodyweight-Variante\, zuhause (30 Min)\n\n
+ Warm-up: Kniebeuge ohne Gewicht x15\, Ausfallschritte im Wechsel x10/Seite\
+ , Armkreisen + Rumpfrotation x10\, Knöchelkreisen 10x/Richtung je Fuß\n\nHa
+ uptteil (3 Runden):\n- Kettlebell Goblet Squat – 12–15 Wdh\n- Bulgarischer 
+ Split Squat (hinterer Fuß erhöht) – 8–10 Wdh/Seite\n- Einbeiniger Wadenhebe
+ r (Wand/Treppe) – 15 Wdh/Seite\n- Theraband seitliche Schritte – 10 Wdh/Sei
+ te\n- Einbeinstand mit Kettlebell-Reach – 8 Wdh/Seite\n- Plank – 30–45 Sek\
+ n\nAusklang: Wadendehnung\, Knöchel-Mobility\n\nWindsurf-Transfer: Chop-Abs
+ orption\, Halsen\, Stabilität beim Wasserstart.
+LAST-MODIFIED:20260803T073259Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Kraft A – Kettlebell/Bodyweight (zuhause)
 TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR

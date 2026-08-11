@@ -1,0 +1,264 @@
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2xl);
+  padding: var(--size-lg) 0;
+}
+
+.week-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  padding: 0 var(--size-lg);
+}
+
+.recipe-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-lg);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  padding: 0 var(--size-lg);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--size-md);
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--size-lg);
+  padding: 0 var(--size-lg);
+}
+
+@media (max-width: 480px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    gap: var(--size-md);
+    padding: 0 8px;
+  }
+}
+
+.recipe-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-md);
+  padding: var(--size-md) var(--size-lg);
+}
+
+.recipe-image {
+  display: none;
+}
+
+.recipe-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.4;
+  padding: 0;
+}
+
+.recipe-text {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-text strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.recipe-macros {
+  display: flex;
+  gap: var(--size-sm);
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.recipe-link {
+  display: block;
+  padding: var(--size-md) 0 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-top: 1px solid var(--color-border);
+  transition: all 150ms ease;
+  margin-top: auto;
+}
+
+.recipe-link:hover {
+  background: var(--color-bg);
+  color: var(--color-primary-dark);
+}
+
+.macro {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.macro.kcal {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.macro.protein {
+  background: oklch(82% 0.12 135);
+  color: oklch(48% 0.18 135);
+}
+
+.macro.fett {
+  background: oklch(88% 0.12 25);
+  color: oklch(55% 0.18 25);
+}
+
+.macro.kohlenhydrate {
+  background: oklch(85% 0.12 65);
+  color: oklch(50% 0.18 65);
+}
+
+.snacks-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  padding: var(--size-lg);
+  margin: 0;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.kcal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-lg);
+  padding: 0 var(--size-lg);
+}
+
+@media (max-width: 480px) {
+  .kcal-grid {
+    grid-template-columns: 1fr;
+    gap: var(--size-md);
+    padding: 0 8px;
+  }
+}
+
+.kcal-box {
+  background: var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  padding: var(--size-lg);
+  text-align: center;
+}
+
+.kcal-box.accent {
+  background: oklch(88% 0.12 25);
+}
+
+.kcal-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.kcal-box.accent .kcal-value {
+  color: oklch(55% 0.18 25);
+}
+
+.kcal-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--size-xs);
+}
+
+.kcal-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  padding: var(--size-lg);
+  margin: 0;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 480px) {
+  .recipes-container {
+    gap: var(--size-lg);
+    padding: var(--size-md) 0;
+  }
+
+  .week-label {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .section-title {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .recipe-card {
+    padding: 10px 8px;
+  }
+
+  .recipe-title {
+    font-size: 13px;
+  }
+
+  .recipe-text {
+    font-size: 11px;
+  }
+
+  .recipe-macros {
+    gap: var(--size-xs);
+  }
+
+  .macro {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+
+  .kcal-box {
+    padding: var(--size-md);
+  }
+
+  .kcal-value {
+    font-size: 16px;
+  }
+
+  .kcal-label {
+    font-size: 10px;
+  }
+
+  .kcal-note {
+    font-size: 11px;
+    padding: var(--size-md);
+  }
+
+  .snacks-text {
+    font-size: 12px;
+    padding: var(--size-md);
+  }
+}

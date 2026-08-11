@@ -1,0 +1,382 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+  font-family: var(--font-display);
+}
+
+.app.loading {
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto var(--size-xl);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.app-screen {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  padding-bottom: 90px;
+}
+
+.app-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+
+.screen-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--size-lg);
+}
+
+.screen-header {
+  padding: var(--size-2xl);
+  background: white;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.screen-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* HOME SCREEN LEGACY (GitHub App Layout) */
+.home-screen-legacy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 90px;
+}
+
+/* HERO - Simpler Modern Design with Background Image */
+.hero {
+  background-image:
+    linear-gradient(135deg, rgba(70, 130, 180, 0.8) 0%, rgba(30, 90, 180, 0.8) 100%),
+    url('/windsurfing-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ff8c00;
+  position: relative;
+  padding: 48px 24px 20px;
+  margin-bottom: 0;
+  color: white;
+  overflow: visible;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero-content {
+  max-width: 100%;
+}
+
+/* Eyebrow & Heading */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 36px;
+  margin: 0 0 24px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: white;
+}
+
+/* Stats Row - Positioned below hero */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: -48px;
+  padding: 0 24px 48px;
+  position: relative;
+  z-index: 3;
+}
+
+.stat-chip {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-chip .num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.stat-chip .lbl {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+
+.sheet {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 48px 16px 24px;
+  flex: 1;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #e2e6ea;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 2px rgba(20, 24, 28, 0.03);
+}
+
+.card h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  margin: 0 0 14px;
+  color: #14181c;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card h2 .bar {
+  width: 5px;
+  height: 16px;
+  background: var(--color-primary);
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* NAV */
+.app-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  padding: var(--size-sm);
+  background: white;
+  border-top: 1px solid var(--color-border);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-xs);
+  padding: var(--size-sm) var(--size-md);
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 150ms ease;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: var(--color-text);
+}
+
+.nav-item.active {
+  color: var(--color-primary);
+}
+
+.nav-item svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* COMING SOON */
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-2xl);
+  padding: var(--size-3xl) var(--size-lg);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.coming-icon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.coming-soon h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.coming-soon p {
+  margin: 0;
+  max-width: 240px;
+}
+
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .hero {
+    padding: 32px 12px 16px;
+    margin-bottom: 0;
+  }
+
+  .hero-inner {
+    padding: 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    margin-bottom: 6px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin: 0 0 16px;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+  }
+
+  .stat-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 16px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: -8px;
+    padding: 0 12px 16px;
+  }
+
+  .stat-chip {
+    padding: 12px 8px;
+    border-radius: 10px;
+  }
+
+  .stat-chip .num {
+    font-size: 16px;
+  }
+
+  .stat-chip .lbl {
+    font-size: 9px;
+    margin-top: 3px;
+  }
+
+  .sheet {
+    padding: 24px 12px 24px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .card h2 {
+    font-size: 12px;
+    margin: 0 0 6px;
+    gap: 4px;
+  }
+
+  .card h2 .bar {
+    width: 3px;
+    height: 12px;
+  }
+
+  .home-screen-legacy {
+    padding-bottom: 90px;
+  }
+
+  .screen-header {
+    padding: var(--size-md);
+  }
+
+  .screen-header h1 {
+    font-size: 18px;
+  }
+}
